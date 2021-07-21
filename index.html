@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <title>Eidul Azahar Website Landing Page</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/star.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">হোম</a></li>
+                <li><a href="#">মেনু</a></li>
+                <li><a href="#">ঈদ স্পেসাল</a></li>
+                <li><a href="#">যোগাযোগ</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>আপনাকে কোরবানির ঈদের <br> শুবেচ্ছা
+                    <span>ঈদ মোবারক</span>
+                </h2>
+                <p>কোরবানির ঈদ মুসলমানের অন্যতম প্রধান ঈদ উৎসব যা <strong>ঈদুল আযহা</strong> নামে পরিচিত। এই পবিত্র দিনে
+                    মুসলিম সমাজের
+                    লোকেরা আল্লাহকে সন্তষ্ট করার জন্য গরু, মহিষ, ছাগল, উট, দুম্বা কোরবানি দিয়ে থাকে। এবং কোরবানির শেষে
+                    মাংশের একটি অংশ নিজেদের কাছে রেখে বাকি দরিদ্র ও অভাবী সমাজের মানুষের মধ্যে বিতরণ করে দেয়। এর পরে
+                    নামাজ আদায় করে একে অপরকে ঈদ মোবারক অভিনন্দন ও শুভেচ্ছা জানিয়ে আল্লাহর কাছে সুখ, শান্তির দোয়া করে।
+                </p>
+                <a href="#">আরো পড়ুন</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/cow.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/cow.png" onclick="imgSlider('img/cow.png'); changeCircleColor('#017143')" alt=""></li>
+            <li><img src="img/camel.png" onclick="imgSlider('img/camel.png'); changeCircleColor('#eb7495')" alt=""></li>
+            <li><img src="img/got.png" onclick="imgSlider('img/got.png'); changeCircleColor('#d752b1')" alt=""></li>
+        </ul>
+        <div class="sci">
+            <li><a href="#"><img src="img/Instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="img/Twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/Youtube.png" alt=""></a></li>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+
+</html>
